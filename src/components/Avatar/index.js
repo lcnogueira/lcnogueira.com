@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const Avatar = () => {
+function Avatar() {
   const { avatarImage } = useStaticQuery(
     graphql`
       query {
@@ -18,6 +18,6 @@ const Avatar = () => {
   );
 
   return <Img fixed={avatarImage.childImageSharp.fixed} />;
-};
+}
 
 export default Avatar;
