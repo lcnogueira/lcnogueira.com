@@ -1,25 +1,12 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 
 import Avatar from '../Avatar';
 import * as S from './styled';
 
+import useSiteMetadata from '../../hooks/useSiteMetadata';
+
 function Profile() {
-  const {
-    site: {
-      siteMetadata: { author, position, description },
-    },
-  } = useStaticQuery(graphql`
-    query MySiteMetadata {
-      site {
-        siteMetadata {
-          author
-          position
-          description
-        }
-      }
-    }
-  `);
+  const { author, position, description } = useSiteMetadata();
 
   return (
     <S.ProfileWrapper>
