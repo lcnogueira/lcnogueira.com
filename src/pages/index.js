@@ -1,21 +1,67 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import PostItem from '../components/PostItem';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <PostItem
-      slug="/about/"
-      category="Misc"
-      date="30 de Julho de 2019"
-      timeToRead="5"
-      title="Diga não ao Medium: tenha sua própria plataforma"
-      description="Algumas razões para você ter sua própria plataforma ao invés de soluções como o Medium."
-    />
-  </Layout>
-);
+function IndexPage() {
+  const {
+    allMarkdownRemark: { edges: postList },
+  } = useStaticQuery(
+    graphql`
+      query PostList {
+        allMarkdownRemark {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                background
+                category
+                date(locale: "en-us", formatString: "MMMM Do YYYY")
+                description
+                title
+              }
+              timeToRead
+              wordCount {
+                words
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      {postList.map(
+        ({
+          node: {
+            id,
+            fields: { slug },
+            frontmatter: { background, category, date, description, title },
+            timeToRead,
+          },
+        }) => (
+          <PostItem
+            key={id}
+            slug={slug}
+            category={category}
+            date={date}
+            timeToRead={timeToRead}
+            title={title}
+            description={description}
+            background={background}
+          />
+        )
+      )}
+    </Layout>
+  );
+}
 
 export default IndexPage;
