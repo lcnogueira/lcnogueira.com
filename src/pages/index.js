@@ -14,6 +14,7 @@ function IndexPage() {
         allMarkdownRemark {
           edges {
             node {
+              id
               fields {
                 slug
               }
@@ -41,12 +42,14 @@ function IndexPage() {
       {postList.map(
         ({
           node: {
+            id,
+            fields: { slug },
             frontmatter: { background, category, date, description, title },
             timeToRead,
-            fields: { slug },
           },
         }) => (
           <PostItem
+            key={id}
             slug={slug}
             category={category}
             date={date}
