@@ -4,9 +4,12 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import PostItem from '../components/PostItem';
+import Pagination from '../components/Pagination';
 
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges;
+
+  const { currentPage, numPages } = props.pageContext;
 
   return (
     <Layout>
@@ -32,6 +35,7 @@ const BlogList = props => {
           />
         )
       )}
+      <Pagination currentPage={currentPage} numPages={numPages} />
     </Layout>
   );
 };
