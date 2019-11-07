@@ -11,7 +11,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   // Ensures we are processing only markdown files
   if (node.internal.type === 'MarkdownRemark') {
-    // Use `createFilePath` to turn markdown files
+    // Use `createFilePath` to turn markdown files in our 'src/pages' directory into '/slug'
     const slug = createFilePath({
       node,
       getNode,
@@ -31,26 +31,55 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const res = await graphql(`
-    {
-      allMarkdownRemark {
+    query PostList {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
+            id
             fields {
               slug
             }
+            frontmatter {
+              background
+              category
+              date(locale: "en-us", formatString: "MMMM Do YYYY")
+              description
+              title
+            }
+            timeToRead
           }
         }
       }
     }
   `);
 
-  res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const posts = res.data.allMarkdownRemark.edges;
+
+  // Creates the page for each post
+  posts.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/blog-post.js`),
       context: {
         // Data passed to context is available in page queries as GraphQL variables.
         slug: node.fields.slug,
+      },
+    });
+  });
+
+  const postsPerPage = 6;
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+  // Creates the page for each list of posts
+  Array.from({ length: numPages }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? `/` : `/page/${index + 1}`,
+      component: path.resolve(`./src/templates/blog-list.js`),
+      context: {
+        limit: postsPerPage,
+        skip: index * postsPerPage,
+        numPages,
+        currentPage: index + 1,
       },
     });
   });
