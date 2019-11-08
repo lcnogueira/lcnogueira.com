@@ -48,6 +48,22 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             timeToRead
           }
+          next {
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+            }
+          }
+          previous {
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+            }
+          }
         }
       }
     }
@@ -56,13 +72,15 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = res.data.allMarkdownRemark.edges;
 
   // Creates the page for each post
-  posts.forEach(({ node }) => {
+  posts.forEach(({ node, next, previous }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/blog-post.js`),
       context: {
         // Data passed to context is available in page queries as GraphQL variables.
         slug: node.fields.slug,
+        previousPost: next,
+        nextPost: previous,
       },
     });
   });
@@ -70,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const postsPerPage = 6;
   const numPages = Math.ceil(posts.length / postsPerPage);
 
-  // Creates the page for each list of posts
+  // Creates the page for each posts page
   Array.from({ length: numPages }).forEach((_, index) => {
     createPage({
       path: index === 0 ? `/` : `/page/${index + 1}`,

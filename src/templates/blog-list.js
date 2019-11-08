@@ -7,7 +7,7 @@ import PostItem from '../components/PostItem';
 import Pagination from '../components/Pagination';
 
 const BlogList = props => {
-  const postList = props.data.allMarkdownRemark.edges;
+  const { edges: postList } = props.data.allMarkdownRemark;
 
   const { currentPage, numPages } = props.pageContext;
 
