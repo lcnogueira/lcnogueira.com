@@ -5,13 +5,13 @@ import ReactDisqusComments from 'react-disqus-comments';
 import * as S from './styled';
 
 const Comments = ({ url, title }) => {
-  const completeURL = `https://lcnogueira.com${url}`;
+  const completeURL = `${process.env.GATSBY_FRONTEND_URL}${url}`;
 
   return (
     <S.CommentsWrapper>
       <S.CommentsTitle>Comments</S.CommentsTitle>
       <ReactDisqusComments
-        shortname="lcnogueira"
+        shortname={process.env.GATSBY_DISQUS_SHORTNAME}
         identifier={completeURL}
         title={title}
         url={completeURL}
