@@ -2,7 +2,7 @@ import React from 'react';
 import PostItem from '../PostItem';
 
 const Hit = ({
-  hit: { fields, title, date, description, category, background },
+  hit: { fields, background, title, date, timeToRead, description, category },
 }) => {
   return (
     <PostItem
@@ -10,6 +10,7 @@ const Hit = ({
       background={background}
       title={title}
       date={date}
+      timeToRead={timeToRead}
       description={description}
       category={category}
     />
