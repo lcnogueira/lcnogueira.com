@@ -62,5 +62,28 @@ const GlobalStyles = createGlobalStyle`
   	width: 100%;
   	height: auto;
   }
+
+  body.dark,
+  body.light{
+    --highlight: #1fa1f2;
+    --white: #fff;
+    --black: #222;
+  }
+
+  body.dark {
+    --borders: #38444d;
+    --texts: #8899a6;
+    --postColor: #fff;
+    --mediumBackground: #192734;
+    --background: #16202c;
+  }
+
+  body.light{
+    --borders: #dedede;
+    --texts: #555;
+    --postColor: #111;
+    --mediumBackground: #f0f0f3;
+    --background: #fff;
+  }
 `;
 export default GlobalStyles;
