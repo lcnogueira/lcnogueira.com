@@ -52,6 +52,7 @@ function MenuBar() {
           onClick={() => {
             window.__setPreferredDisplay(toggleDisplay());
           }}
+          className="display"
         >
           {display === 'list' ? <Grid /> : <List />}
         </S.MenuBarItem>

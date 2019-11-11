@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { Link } from 'gatsby';
 
 export const MenuBarWrapper = styled.aside`
@@ -13,15 +14,35 @@ export const MenuBarWrapper = styled.aside`
   position: fixed;
   right: 0;
   width: 3.75rem;
+
+  ${media.lessThan('large')`
+    border-top: 1px solid var(--borders);
+    flex-direction: row;
+    height: auto;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  `}
 `;
 
 export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan('large')`
+    flex-direction: row;
+  `}
 `;
 
 export const MenuBarLink = styled(Link)`
   display: block;
+
+  &.active {
+    span {
+      color: var(--highlight);
+    }
+  }
 `;
 
 export const MenuBarItem = styled.span`
@@ -44,4 +65,23 @@ export const MenuBarItem = styled.span`
       color: #e2e240;
     }
   }
+
+  &.display {
+    ${media.lessThan('large')`
+        display: none;
+    `}
+  }
+
+  ${media.greaterThan('large')`
+    &:hover {
+      color: var(--highlight);
+    }
+  `}
+
+  ${media.lessThan('large')`
+    height: 3.2rem;
+    padding: .9rem;
+    position: relative;
+    width: 3.2rem;
+  `}
 `;
