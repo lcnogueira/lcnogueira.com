@@ -2,6 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
+import getThemeColor from '../../utils/getThemeColor';
 import * as S from './styled';
 
 function Pagination({ currentPage, numPages }) {
@@ -17,7 +18,7 @@ function Pagination({ currentPage, numPages }) {
           to={prevPage}
           cover
           direction="left"
-          bg="#16202c"
+          bg={getThemeColor()}
           duration={0.6}
         >
           ← previous page
@@ -31,7 +32,7 @@ function Pagination({ currentPage, numPages }) {
           to={nextPage}
           cover
           direction="right"
-          bg="#16202c"
+          bg={getThemeColor()}
           duration={0.6}
         >
           next page →
