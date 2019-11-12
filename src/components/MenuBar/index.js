@@ -6,6 +6,8 @@ import { Bulb as Light } from 'styled-icons/boxicons-regular/Bulb';
 import { Grid } from 'styled-icons/boxicons-solid/Grid';
 import { ThList as List } from 'styled-icons/typicons/ThList';
 
+import getThemeColor from '../../utils/getThemeColor';
+
 import * as S from './styled';
 
 function MenuBar() {
@@ -26,12 +28,26 @@ function MenuBar() {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink to="/" title="Back to Home">
+        <S.MenuBarLink
+          to="/"
+          title="Back to Home"
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+        >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search" title="Search">
+        <S.MenuBarLink
+          to="/search"
+          title="Search"
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+        >
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
