@@ -11,10 +11,13 @@ import Helmet from 'react-helmet';
 
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
   const siteMetadata = useSiteMetadata();
 
   const metaDescription = description || siteMetadata.description;
+
+  const { siteUrl } = siteMetadata;
+  const ogImage = `${siteUrl}${image || '/assets/img/me.jpg'}`;
 
   return (
     <Helmet
@@ -37,12 +40,20 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: ogImage,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image:src`,
+          content: ogImage,
         },
         {
           name: `twitter:creator`,

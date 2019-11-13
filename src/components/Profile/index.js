@@ -7,7 +7,7 @@ import * as S from './styled';
 import useSiteMetadata from '../../hooks/useSiteMetadata';
 
 function Profile() {
-  const { author, position, description } = useSiteMetadata();
+  const { title, position, authorDescription } = useSiteMetadata();
 
   return (
     <S.ProfileWrapper>
@@ -20,11 +20,11 @@ function Profile() {
       >
         <Avatar />
         <S.ProfileAuthor>
-          {author}
+          {title}
           <S.ProfilePosition>{position}</S.ProfilePosition>
         </S.ProfileAuthor>
       </S.ProfileLink>
-      <S.ProfileDescription>{description}</S.ProfileDescription>
+      <S.ProfileDescription>{authorDescription}</S.ProfileDescription>
     </S.ProfileWrapper>
   );
 }

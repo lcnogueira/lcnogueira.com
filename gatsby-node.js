@@ -45,6 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
               date(locale: "en-us", formatString: "MMMM Do YYYY")
               description
               title
+              image
             }
             timeToRead
           }

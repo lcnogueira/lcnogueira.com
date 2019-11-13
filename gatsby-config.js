@@ -82,10 +82,12 @@ const pluginsList = [
 
 module.exports = {
   siteMetadata: {
-    title: `My personal website`,
+    title: `Luiz Cláudio`,
+    author: `@luizcns`,
     position: `Javascript Software Engineer`,
-    description: `My personal website where I'll show my articles, projects, experience, education and other stuff.`,
-    author: `Luiz Cláudio`,
+    description: `A blog about Javascript, React, frontend development and other stuff.`,
+    authorDescription: `I work at UFERSA at the moment and write about Javascript, React, frontend development and other stuff.`,
+    siteUrl: 'https://lcnogueira.com',
   },
   plugins: pluginsList,
 };
