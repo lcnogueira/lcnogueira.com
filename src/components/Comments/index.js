@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDisqusComments from 'react-disqus-comments';
 
+import useSiteMetadata from '../../hooks/useSiteMetadata';
+
 import * as S from './styled';
 
 const Comments = ({ url, title }) => {
-  const completeURL = `${process.env.GATSBY_FRONTEND_URL}${url}`;
+  const { siteUrl } = useSiteMetadata();
+  const completeURL = `${siteUrl}${url}`;
 
   return (
     <S.CommentsWrapper>

@@ -7,9 +7,11 @@ export default function useSiteMetadata() {
         site {
           siteMetadata {
             title
+            author
             position
             description
-            author
+            authorDescription
+            siteUrl
           }
         }
       }
