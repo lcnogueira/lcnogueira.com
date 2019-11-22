@@ -28,5 +28,27 @@ collections:
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Post Image', name: 'image', widget: 'image' }
+      - {
+        label: "Category",
+        name: "category",
+        widget: "select",
+        options: ["vscode", "css", "js", "html", "react", "node", "docker","git"]
+      }
+      - {
+        label: "Background",
+        name: "background",
+        widget: "select",
+        options: [
+          { label: "VS Code", value: "#B31917" },
+          { label: 'CSS', value: '#2DA0C3' },
+          { label: 'JS', value: '#D6BA32' },
+          { label: 'HTML', value: '#EB7728' },
+          { label: 'React', value: '#7D669E' },
+          { label: 'Node', value: '#7AAB13' },
+          { label: 'Docker', value: '#637a91' },
+          { label: 'Git', value: '#222' },
+        ]
+      }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: [""] }
       - { label: 'Body', name: 'body', widget: 'markdown' }
