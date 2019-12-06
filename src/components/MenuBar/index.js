@@ -72,7 +72,12 @@ function MenuBar() {
         >
           {display === 'list' ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Go to the top">
+        <S.MenuBarItem
+          title="Go to the top"
+          onClick={() => {
+            window.scroll({ top: 0, behavior: 'smooth' });
+          }}
+        >
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>
