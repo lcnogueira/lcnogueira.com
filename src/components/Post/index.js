@@ -5,7 +5,7 @@ import getThemeColor from '../../utils/getThemeColor';
 
 import * as S from './styled';
 
-const PostItem = ({
+const Post = ({
   slug,
   background,
   category,
@@ -14,27 +14,27 @@ const PostItem = ({
   title,
   description,
 }) => (
-  <S.PostItemLink
+  <S.PostLink
     to={slug}
     cover
     direction="right"
     bg={getThemeColor()}
     duration={0.6}
   >
-    <S.PostItemWrapper>
-      <S.PostItemTag background={background}>{category}</S.PostItemTag>
-      <S.PostItemInfo>
-        <S.PostItemDate>
+    <S.PostWrapper>
+      <S.PostTag background={background}>{category}</S.PostTag>
+      <S.PostInfo>
+        <S.PostDate>
           {date} • {timeToRead} min read
-        </S.PostItemDate>
-        <S.PostItemTitle>{title}</S.PostItemTitle>
-        <S.PostItemDescription>{description}</S.PostItemDescription>
-      </S.PostItemInfo>
-    </S.PostItemWrapper>
-  </S.PostItemLink>
+        </S.PostDate>
+        <S.PostTitle>{title}</S.PostTitle>
+        <S.PostDescription>{description}</S.PostDescription>
+      </S.PostInfo>
+    </S.PostWrapper>
+  </S.PostLink>
 );
 
-PostItem.propTypes = {
+Post.propTypes = {
   slug: PropTypes.string.isRequired,
   background: PropTypes.string,
   category: PropTypes.string.isRequired,
@@ -44,4 +44,4 @@ PostItem.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-export default PostItem;
+export default Post;

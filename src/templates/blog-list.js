@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import PostItem from '../components/PostItem';
+import Post from '../components/Post';
 import Pagination from '../components/Pagination';
 
 import * as S from '../components/ListWrapper/styled';
@@ -26,7 +26,7 @@ const BlogList = props => {
               timeToRead,
             },
           }) => (
-            <PostItem
+            <Post
               key={id}
               slug={slug}
               category={category}
