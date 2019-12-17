@@ -1,11 +1,11 @@
 import React from 'react';
-import PostItem from '../PostItem';
+import Post from '../Post';
 
 const Hit = ({
   hit: { fields, background, title, date, timeToRead, description, category },
 }) => {
   return (
-    <PostItem
+    <Post
       slug={fields.slug}
       background={background}
       title={title}

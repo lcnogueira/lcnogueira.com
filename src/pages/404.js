@@ -18,10 +18,6 @@ const Container = styled.section`
   height: 100vh;
   width: 100vw;
   padding: 0 20px;
-
-  @media screen and (max-width: 768px) {
-    background-size: 280px;
-  }
 `;
 
 const Title = styled.h1`
