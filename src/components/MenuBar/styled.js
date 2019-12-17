@@ -5,7 +5,6 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 export const MenuBarWrapper = styled.aside`
   align-items: center;
   background: var(--mediumBackground);
-  border-left: 1px solid var(--borders);
   display: flex;
   flex-direction: column;
   height: 100vh;
