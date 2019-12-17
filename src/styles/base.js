@@ -102,6 +102,7 @@ export const MainContent = styled.section`
 
   li {
     padding: 0.625rem 0;
+
     & > ul {
       margin-bottom: 0;
     }
