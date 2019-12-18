@@ -9,8 +9,7 @@ const postsQuery = `{
           slug
         }
         frontmatter {
-          background
-          category
+          tags
           date_timestamp: date
           date(locale: "en-us", formatString: "MMMM Do YYYY")
           description

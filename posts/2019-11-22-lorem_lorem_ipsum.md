@@ -2,14 +2,12 @@
 date: '2019-11-22 12:35:51'
 title: Lorem lorem ipsum
 description: And I'm lorem sure lorem
-category: css
-background: '#2DA0C3'
 tags:
-  - tag1
-  - tag2
-  - tag3
-  - test
+  - vscode
+  - html
+  - css
 ---
+
 # Lorem ipsum (update)
 
 Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, [adipiscing](http://google.com) eu pulvinar vel, sodales vitae dui. :thumbsup: :smile: :sparkler:
