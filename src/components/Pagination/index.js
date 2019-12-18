@@ -25,7 +25,7 @@ function Pagination({ currentPage, numPages }) {
         </AniLink>
       )}
       <p>
-        {currentPage} de {numPages}
+        {currentPage} of {numPages}
       </p>
       {!isLast && (
         <AniLink

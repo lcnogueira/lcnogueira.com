@@ -7,10 +7,10 @@ function Avatar() {
   const { avatarImage } = useStaticQuery(
     graphql`
       query {
-        avatarImage: file(relativePath: { eq: "me.jpg" }) {
+        avatarImage: file(relativePath: { eq: "me.png" }) {
           childImageSharp {
-            fluid(maxWidth: 60) {
-              ...GatsbyImageSharpFluid_tracedSVG
+            fluid(maxWidth: 128) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

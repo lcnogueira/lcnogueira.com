@@ -42,6 +42,7 @@ const pluginsList = [
           resolve: 'gatsby-remark-images',
           options: {
             maxWidth: 960,
+            quality: 80,
             linkImagesToOriginal: false,
           },
         },
@@ -72,7 +73,7 @@ const pluginsList = [
       background_color: `#16202c`,
       theme_color: `#16202c`,
       display: `minimal-ui`,
-      icon: `static/assets/img/me.jpg`, // This path is relative to the root of the site.
+      icon: `static/assets/img/me.png`, // This path is relative to the root of the site.
     },
   },
   `gatsby-plugin-sitemap`,

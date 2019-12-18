@@ -17,11 +17,16 @@ export const PostLink = styled(AniLink)`
 `;
 
 export const PostWrapper = styled.section`
-  align-items: center;
   border-bottom: 1px solid var(--borders);
-  display: flex;
-  padding: 2rem 3rem;
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem 3rem;
+
+  ${media.lessThan('large')`
+    padding: 2rem 1rem;
+  `}
 
   body#grid & {
     border: none;
@@ -29,46 +34,31 @@ export const PostWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
   }
-
-  ${media.lessThan('large')`
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 2rem 1rem;
-  `}
 `;
 
 export const PostTag = styled.div`
-  align-items: center;
   background: ${props =>
     props.background ? props.background : 'var(--highlight)'};
-  border-radius: 50%;
   color: var(--white);
   display: flex;
-  font-size: 1.3rem;
-  font-weight: 700;
+  align-items: center;
   justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
+  font-weight: 700;
+  font-size: 1rem;
   text-transform: uppercase;
+  min-height: auto;
+  min-width: auto;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.7rem;
 
   body#grid & {
     margin-bottom: 1.5rem;
   }
-
-  ${media.lessThan('large')`
-    border-radius: 0;
-    font-size: 1rem;
-    min-height: auto;
-    min-width: auto;
-    padding: .2rem .5rem;
-    margin-bottom: .7rem;
-  `}
 `;
 
 export const PostInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
 
   ${media.lessThan('large')`
     margin: 0;
