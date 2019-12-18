@@ -35,5 +35,12 @@ collections:
           widget: 'image',
           required: false,
         }
-      - { label: 'Tags', name: 'tags', widget: 'list', default: [''] }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'select',
+          multiple: true,
+          options:
+            ['html', 'css', 'js', 'react', 'node', 'vscode', 'docker', 'git'],
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
