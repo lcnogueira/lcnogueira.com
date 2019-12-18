@@ -42,7 +42,7 @@ const pluginsList = [
           resolve: 'gatsby-remark-images',
           options: {
             maxWidth: 960,
-            quality: 100,
+            quality: 80,
             linkImagesToOriginal: false,
           },
         },
