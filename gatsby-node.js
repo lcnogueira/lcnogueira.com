@@ -40,8 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              background
-              category
+              tags
               date(locale: "en-us", formatString: "MMMM Do YYYY")
               description
               title

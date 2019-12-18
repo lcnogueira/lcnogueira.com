@@ -2,18 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import getThemeColor from '../../utils/getThemeColor';
+import getTagColor from '../../utils/getTagColor';
 
 import * as S from './styled';
 
-const Post = ({
-  slug,
-  background,
-  category,
-  date,
-  timeToRead,
-  title,
-  description,
-}) => (
+const Post = ({ slug, tags, date, timeToRead, title, description }) => (
   <S.PostLink
     to={slug}
     cover
@@ -22,7 +15,14 @@ const Post = ({
     duration={0.6}
   >
     <S.PostWrapper>
-      <S.PostTag background={background}>{category}</S.PostTag>
+      <S.PostTagWrapper>
+        {tags &&
+          tags.map((tag, i) => (
+            <S.PostTag key={i} background={getTagColor(tag)}>
+              {tag}
+            </S.PostTag>
+          ))}
+      </S.PostTagWrapper>
       <S.PostInfo>
         <S.PostDate>
           {date} • {timeToRead} min read
@@ -36,8 +36,7 @@ const Post = ({
 
 Post.propTypes = {
   slug: PropTypes.string.isRequired,
-  background: PropTypes.string,
-  category: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,

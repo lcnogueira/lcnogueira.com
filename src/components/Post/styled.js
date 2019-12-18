@@ -36,6 +36,10 @@ export const PostWrapper = styled.section`
   }
 `;
 
+export const PostTagWrapper = styled.div`
+  display: flex;
+`;
+
 export const PostTag = styled.div`
   background: ${props =>
     props.background ? props.background : 'var(--highlight)'};
@@ -50,6 +54,7 @@ export const PostTag = styled.div`
   min-width: auto;
   padding: 0.2rem 0.5rem;
   margin-bottom: 0.7rem;
+  margin-right: 0.5rem;
 
   body#grid & {
     margin-bottom: 1.5rem;
