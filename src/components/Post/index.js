@@ -7,22 +7,29 @@ import getTagColor from '../../utils/getTagColor';
 import * as S from './styled';
 
 const Post = ({ slug, tags, date, timeToRead, title, description }) => (
-  <S.PostLink
-    to={slug}
-    cover
-    direction="right"
-    bg={getThemeColor()}
-    duration={0.6}
-  >
-    <S.PostWrapper>
-      <S.PostTagWrapper>
-        {tags &&
-          tags.map((tag, i) => (
-            <S.PostTag key={i} background={getTagColor(tag)}>
-              {tag}
-            </S.PostTag>
-          ))}
-      </S.PostTagWrapper>
+  <S.PostWrapper>
+    <S.PostTagWrapper>
+      {tags &&
+        tags.map((tag, i) => (
+          <S.PostTagLink
+            key={i}
+            to={`/${tag}`}
+            cover
+            direction="right"
+            bg={getThemeColor()}
+            duration={0.6}
+          >
+            <S.PostTag background={getTagColor(tag)}>{tag}</S.PostTag>
+          </S.PostTagLink>
+        ))}
+    </S.PostTagWrapper>
+    <S.PostLink
+      to={slug}
+      cover
+      direction="right"
+      bg={getThemeColor()}
+      duration={0.6}
+    >
       <S.PostInfo>
         <S.PostDate>
           {date} • {timeToRead} min read
@@ -30,8 +37,8 @@ const Post = ({ slug, tags, date, timeToRead, title, description }) => (
         <S.PostTitle>{title}</S.PostTitle>
         <S.PostDescription>{description}</S.PostDescription>
       </S.PostInfo>
-    </S.PostWrapper>
-  </S.PostLink>
+    </S.PostLink>
+  </S.PostWrapper>
 );
 
 Post.propTypes = {

@@ -7,10 +7,6 @@ export const PostLink = styled(AniLink)`
   display: flex;
   text-decoration: none;
 
-  body#grid & {
-    background-color: var(--background);
-  }
-
   &:hover {
     color: var(--highlight);
   }
@@ -29,6 +25,7 @@ export const PostWrapper = styled.section`
   `}
 
   body#grid & {
+    background-color: var(--background);
     border: none;
     padding: 2em 1rem;
     flex-direction: column;
@@ -48,7 +45,7 @@ export const PostTag = styled.div`
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   min-height: auto;
   min-width: auto;
@@ -58,6 +55,16 @@ export const PostTag = styled.div`
 
   body#grid & {
     margin-bottom: 1.5rem;
+  }
+`;
+
+export const PostTagLink = styled(AniLink)`
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.5s;
+
+  &:hover {
+    opacity: 0.7;
   }
 `;
 

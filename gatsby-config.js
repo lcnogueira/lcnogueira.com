@@ -88,7 +88,7 @@ module.exports = {
     title: `Luiz Cláudio`,
     author: `@luizcns`,
     position: `Javascript Software Engineer`,
-    description: `A blog about Javascript, React, frontend development and other stuff.`,
+    description: `A blog about Javascript, React, Gatsby, frontend development and other stuff.`,
     authorDescription: `I work at UFERSA at the moment and write about Javascript, React, frontend development and other stuff.`,
     siteUrl: 'https://lcnogueira.com',
   },
