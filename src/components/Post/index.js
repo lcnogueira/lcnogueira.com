@@ -13,7 +13,7 @@ const Post = ({ slug, tags, date, timeToRead, title, description }) => (
         tags.map((tag, i) => (
           <S.PostTagLink
             key={i}
-            to={`/${tag}`}
+            to={`/tags/${tag}`}
             cover
             direction="right"
             bg={getThemeColor()}
