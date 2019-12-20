@@ -1,15 +1,22 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import getThemeColor from '../../utils/getThemeColor';
 import * as S from './styled';
 
-function Pagination({ currentPage, numPages }) {
+function Pagination({ tag, currentPage, numPages }) {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`;
-  const nextPage = `/page/${currentPage + 1}`;
+  let prevPage;
+  if (tag) {
+    prevPage = currentPage - 1 === 1 ? `${tag}` : `${tag}/${currentPage - 1}`;
+  } else {
+    prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`;
+  }
+  const nextPage = tag
+    ? `${tag}/${currentPage + 1}`
+    : `/page/${currentPage + 1}`;
 
   return (
     <S.PaginationWrapper>
@@ -43,8 +50,9 @@ function Pagination({ currentPage, numPages }) {
 }
 
 Pagination.propTypes = {
-  currentPage: propTypes.number.isRequired,
-  numPages: propTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  numPages: PropTypes.number.isRequired,
+  tag: PropTypes.string,
 };
 
 export default Pagination;

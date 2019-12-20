@@ -66,6 +66,12 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+          totalCount
+        }
+      }
     }
   `);
 
@@ -85,9 +91,11 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // If you wanna change the number of posts per page, change the const below
   const postsPerPage = 6;
-  const numPages = Math.ceil(posts.length / postsPerPage);
 
+  //Num of pages for each posts page
+  const numPages = Math.ceil(posts.length / postsPerPage);
   // Creates the page for each posts page
   Array.from({ length: numPages }).forEach((_, index) => {
     createPage({
@@ -99,6 +107,28 @@ exports.createPages = async ({ graphql, actions }) => {
         numPages,
         currentPage: index + 1,
       },
+    });
+  });
+
+  // Extract tag data from query
+  const tags = res.data.tagsGroup.group;
+  //For each one of the tags
+  tags.forEach(({ fieldValue: tag, totalCount }) => {
+    //Num of pages for each tags post page
+    const numPages = Math.ceil(totalCount / postsPerPage);
+    // Creates the page for each tags post page
+    Array.from({ length: numPages }).forEach((_, index) => {
+      createPage({
+        path: index === 0 ? `/tags/${tag}` : `/tags/${tag}/${index + 1}`,
+        component: path.resolve(`./src/templates/tags-post-list.js`),
+        context: {
+          tag,
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numPages,
+          currentPage: index + 1,
+        },
+      });
     });
   });
 };
