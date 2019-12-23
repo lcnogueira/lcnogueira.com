@@ -51,8 +51,8 @@ const AboutPage = () => (
         whether it's a web application, a mobile app or an open source library.
       </p>
       <p>
-        I spend my free time by watching movies with my wife, Jamila, doing some
-        exercice or reading a book (usually an investing book). At the moment,
+        I spend my free time watching movies with my wife, Jamila, doing some
+        exercise or reading a book (usually an investing book). At the moment,
         my wife and I live in Brasilia, Brazil, and have no kids (yet).
       </p>
       <h2>Skills</h2>
