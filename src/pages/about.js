@@ -19,43 +19,59 @@ const AboutPage = () => (
         </span>
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-        consequuntur. Dolores corporis doloribus consequatur nam omnis facere
-        perferendis, assumenda iure.
+        I'm a software engineer based in Brazil and I've been working for{' '}
+        <a
+          href="https://ufersa.edu.br"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UFERSA
+        </a>{' '}
+        (a Brazilian University) since August 2012 (you can do the math) and for{' '}
+        <a href="https://www.udacity.com/course/react-nanodegree--nd019">
+          Udacity
+        </a>{' '}
+        (as a React/Javascript project reviewer) since April 2018.
       </p>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odit
-        aspernatur nemo ipsum non iusto atque mollitia molestias, enim dicta
-        consequuntur ratione incidunt, omnis cumque odio molestiae laborum quia
-        ut earum tempora! Amet omnis magni voluptatibus perspiciatis. Non
-        asperiores facere quis praesentium, sapiente doloribus sit obcaecati
-        fugiat soluta commodi unde.
+        I went to{' '}
+        <a
+          href="http://portal.uern.br/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UERN
+        </a>{' '}
+        where I graduated with a Bachelor degree in Computer Science. After
+        that, I went to UFERSA, where I graduated with a Master's degree in
+        Computer Science with an emphasis on Information Systems.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-        inventore, rem similique laudantium blanditiis vel esse dolor
-        necessitatibus nesciunt voluptatum, amet tempore deleniti excepturi
-        ratione beatae cupiditate a nulla quo.
+        I love programming with Javascript, React and Gatsby, regardless of
+        whether it's a web application, a mobile app or an open source library.
       </p>
-
+      <p>
+        I spend my free time by watching movies with my wife, Jamila, doing some
+        exercice or reading a book (usually an investing book). At the moment,
+        my wife and I live in Brasilia, Brazil, and have no kids (yet).
+      </p>
       <h2>Skills</h2>
-
       <ul>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
-        <li>lorem</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
+        <li>HTML 5</li>
+        <li>CSS 3 (Sass)</li>
+        <li>Responsive Design</li>
+        <li>Javascript (Design Patterns, Tests and ES6/7).</li>
+        <li>ReactJS / Redux / Flux.</li>
+        <li>GatsbyJS</li>
+        <li>NodeJS</li>
+        <li>Styled Components</li>
+        <li>Java</li>
+        <li>PostgreSQL.</li>
+        <li>Scrum and Kanban.</li>
+        <li>I'm a fast learner as well :)</li>
       </ul>
-
       <h2>Contact Me!</h2>
       <p>You can contact me by using one of the links below.</p>
-
       <SocialLinks />
     </MainContent>
   </Layout>
