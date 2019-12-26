@@ -38,4 +38,6 @@ Não. Além de conteúdo técnico, é importante também compartilhar conhecimen
 
 ## Até o próximo post!
 
-Era isso, pessoal. Basicamente, queria me apresentar e mostrar o que esperar do material do blog. Espero que gostem e que traga valor para vocês! Grande abraço e nos vemos no próximo post!
+Era isso, pessoal. Basicamente, queria me apresentar e mostrar o que esperar do material do blog. Tem alguma dúvida ou gostaria de comentar, discordar ou só deixar sua opinião? Então aproveita o espaço e comenta aqui abaixo que ficarei muito feliz de interagir com você :)
+
+No mais, espero que goste do conteúdo e que traga valor para você! Grande abraço e nos vemos no próximo post!
