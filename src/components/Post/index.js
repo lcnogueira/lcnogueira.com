@@ -19,7 +19,7 @@ const Post = ({ slug, tags, date, timeToRead, title, description }) => (
             bg={getThemeColor()}
             duration={0.6}
           >
-            <S.PostTag background={getTagColor(tag)}>{tag}</S.PostTag>
+            <S.PostTag colors={getTagColor(tag)}>{tag}</S.PostTag>
           </S.PostTagLink>
         ))}
     </S.PostTagWrapper>

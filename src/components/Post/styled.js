@@ -39,13 +39,13 @@ export const PostTagWrapper = styled.div`
 
 export const PostTag = styled.div`
   background: ${props =>
-    props.background ? props.background : 'var(--highlight)'};
-  color: var(--white);
+    props.colors ? props.colors.background : 'var(--highlight)'};
+  color: ${props => (props.colors ? props.colors.text : 'var(--black)')};
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   min-height: auto;
   min-width: auto;

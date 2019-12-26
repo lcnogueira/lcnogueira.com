@@ -1,14 +1,47 @@
+const dark = '#000';
+const light = '#fff';
+
 const colors = {
-  css: '#2DA0C3',
-  docker: '#637a91',
-  gatsby: '#362066',
-  git: '#222',
-  html: '#E44C21',
-  js: '#F0DB4E',
-  misc: '#7AAB13',
-  node: '#026e00',
-  react: '#61DAFB',
-  vscode: '#2c2c32',
+  css: {
+    background: '#2DA0C3',
+    text: dark,
+  },
+  docker: {
+    background: '#03423f',
+    text: light,
+  },
+  gatsby: {
+    background: '#362066',
+    text: light,
+  },
+  git: {
+    background: '#222',
+    text: light,
+  },
+  html: {
+    background: '#b03a19',
+    text: light,
+  },
+  js: {
+    background: '#F0DB4E',
+    text: dark,
+  },
+  misc: {
+    background: '#47650b',
+    text: light,
+  },
+  node: {
+    background: '#026e00',
+    text: light,
+  },
+  react: {
+    background: '#61DAFB',
+    text: dark,
+  },
+  vscode: {
+    background: '#2c2c32',
+    text: light,
+  },
 };
 
 const getTagColor = tag => colors[tag] || '';
