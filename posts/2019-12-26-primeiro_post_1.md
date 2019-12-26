@@ -4,7 +4,7 @@ title: Primeiro Post!
 description: 'Quem sou eu, porque decidi criar o blog e o que esperar de conteúdo.'
 image: /assets/img/me.png
 tags:
-  - js
+  - misc
 ---
 ## Quem sou eu?
 
