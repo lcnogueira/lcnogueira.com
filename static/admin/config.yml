@@ -49,8 +49,8 @@ collections:
               'html',
               'js',
               'misc',
-              'nodejs',
-              'reactjs',
+              'node',
+              'react',
               'vscode',
             ],
         }

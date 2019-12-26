@@ -4,8 +4,9 @@ title: Primeiro Post!
 description: 'Quem sou eu, porque decidi criar o blog e o que esperar de conteúdo.'
 image: /assets/img/me.png
 tags:
-  - js
+  - misc
 ---
+
 ## Quem sou eu?
 
 Meu nome é Luiz Cláudio, mas prefiro que me chame de Luiz :) Trabalho há pouco mais de 7 anos como Desenvolvedor/Engenheiro de Software para uma universidade brasileira. Se quiser saber um pouco mais sobre mim, tem uma seção [Sobre](https://lcnogueira.com/about/) (está escrita em inglês e vou explicar o motivo mais a frente) que fala mais a respeito. Além disso, qualquer dúvida, entra em contato comigo através de uma das minhas redes sociais ou por e-mail mesmo.
@@ -20,10 +21,10 @@ Durante toda a minha vida de programador compartilhei conhecimento. Isso acontec
 
 Após compartilhar um [artigo que escrevi no medium](https://medium.com/@lcnogueira/um-guia-para-contribui%C3%A7%C3%A3o-em-projetos-open-source-no-github-46a423e4e9b3?source=friends_link&sk=49e3aa412d8a81cdc74a24f325f88667) com colegas do bootcamp da Rocketseat (vou falar em outro artigo do curso que fiz), recebi um feedback muito bacana de vários colegas. Daí, decidi escrever, para:
 
-* Compartilhar o conhecimento de uma maneira centralizada e que se torne mais amigável para quem está consumindo.
-* Que sirva como consulta para quem desejar, inclusive o Luiz Cláudio do futuro :)
-* Que outras pessoas possam contribuir, visto que é um projeto Open Source e os posts são escritos em arquivos Markdown.
-* Poder demonstrar minha capacidade de comunicação em um âmbito profissional.
+- Compartilhar o conhecimento de uma maneira centralizada e que se torne mais amigável para quem está consumindo.
+- Que sirva como consulta para quem desejar, inclusive o Luiz Cláudio do futuro :)
+- Que outras pessoas possam contribuir, visto que é um projeto Open Source e os posts são escritos em arquivos Markdown.
+- Poder demonstrar minha capacidade de comunicação em um âmbito profissional.
 
 ## O blog será escrito em inglês ou português?
 

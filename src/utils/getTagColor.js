@@ -1,12 +1,14 @@
 const colors = {
-  vscode: '#B31917',
   css: '#2DA0C3',
-  js: '#D6BA32',
-  html: '#EB7728',
-  react: '#7D669E',
-  node: '#7AAB13',
   docker: '#637a91',
+  gatsby: '#362066',
   git: '#222',
+  html: '#E44C21',
+  js: '#F0DB4E',
+  misc: '#7AAB13',
+  node: '#026e00',
+  react: '#61DAFB',
+  vscode: '#2c2c32',
 };
 
 const getTagColor = tag => colors[tag] || '';
