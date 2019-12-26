@@ -41,6 +41,17 @@ collections:
           widget: 'select',
           multiple: true,
           options:
-            ['html', 'css', 'js', 'react', 'node', 'vscode', 'docker', 'git'],
+            [
+              'css',
+              'docker',
+              'gatsby',
+              'git',
+              'html',
+              'js',
+              'misc',
+              'nodejs',
+              'reactjs',
+              'vscode',
+            ],
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
