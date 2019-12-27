@@ -21,22 +21,22 @@ Durante toda a minha vida de programador compartilhei conhecimento. Isso acontec
 
 Após compartilhar um [artigo que escrevi no medium](https://medium.com/@lcnogueira/um-guia-para-contribui%C3%A7%C3%A3o-em-projetos-open-source-no-github-46a423e4e9b3?source=friends_link&sk=49e3aa412d8a81cdc74a24f325f88667) com colegas do bootcamp da Rocketseat (vou falar em outro artigo do curso que fiz), recebi um feedback muito bacana de vários colegas. Daí, decidi escrever, para:
 
-- Compartilhar o conhecimento de uma maneira centralizada e que se torne mais amigável para quem está consumindo.
-- Que sirva como consulta para quem desejar, inclusive o Luiz Cláudio do futuro :)
-- Que outras pessoas possam contribuir, visto que é um projeto Open Source e os posts são escritos em arquivos Markdown.
+- Compartilhar o conhecimento de uma maneira centralizada e que se torne mais amigável para quem está consumindo;
+- Que sirva como consulta para quem desejar, inclusive o Luiz Cláudio do futuro :) ;
+- Que outras pessoas possam contribuir, visto que é um projeto Open Source e os posts são escritos em arquivos Markdown;
 - Poder demonstrar minha capacidade de comunicação em um âmbito profissional.
 
 ## O blog será escrito em inglês ou português?
 
-Se perceberam, escrevi a "estrutura" do site (menu lateral, página sobre, rodapé...) em inglês. Isso porque o intuito é que, no futuro, falantes de outras línguas possam consumir esse conteúdo. No momento em que vos falo, escrevo em português, mas a **tendência** é que, aos poucos, vá escrevendo em inglês. Porém, isso não ocorrerá de imediato, visto que tenho de me preocupar com o conteúdo em si, pois, mais importante do que escrever em inglês ou português, é escrever um conteúdo de qualidade. Não se preocupe, pois eu assumo um compromisso com você e garanto que essa será meu foco principal.
+Se perceberam, escrevi a "estrutura" do site (menu lateral, página sobre, rodapé...) em inglês. Isso porque o intuito é que, no futuro, falantes de outras línguas possam consumir esse conteúdo. Nesse primeiro momento, escrevo em português, mas a **tendência** é que, aos poucos, vá escrevendo em inglês. Porém, isso não ocorrerá de imediato, visto que tenho de me preocupar com o conteúdo em si, pois, mais importante do que o idioma, é escrever um conteúdo de qualidade. Não se preocupe, pois eu assumo um compromisso com você e garanto que esse será meu foco principal.
 
 ## O conteúdo será exclusivamente técnico?
 
-Não. Além de conteúdo técnico, é importante também compartilhar conhecimento "empírico". Aquele conhecimento que você só adquire na prática e que não é possível encontrar em livros, sabe? Quem já trabalha há um tempo sabe exatamente do que estou falando. Nem tudo está escrito em livros. Por isso, pretendo repassar também um pouco da minha experiência em si. Mas não se preocupe, pois **sempre** você poderá filtrar o conteúdo que for mais conveniente para você através das tags ou mesmo da busca do site.
+Não. Além de conteúdo técnico, é importante também compartilhar conhecimento empírico: aquele que você só adquire na prática e que não dá para encontrar em livros, sabe? Quem já trabalha há um tempo sabe exatamente do que estou falando. Nem tudo está escrito em livros. Por isso, pretendo repassar também um pouco da minha experiência prática. Mas não se preocupe, pois **sempre** você poderá filtrar o conteúdo que lhe for mais conveniente através das tags ou mesmo da busca do site.
 
 ## Layout/estrutura do site
 
-É importante dar os créditos ao criador do Layout e da estrutura desse site. Criei a estrutura dele baseando-se em um [curso do Willian Justen](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/), um brasileiro fora de série que trabalha como desenvolvedor Front End da TopTal. Há somentes algumas pequenas mudanças que fiz (ex.: a inclusão de tags por post para que você possa filtrar pos tags específicas) mas, de um modo geral, a estrutura e layout são iguais ao dele.
+É importante dar os créditos ao criador do layout e da estrutura desse site. Sua estrutura foi baseada em um [curso do Willian Justen](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/), um brasileiro fora de série que trabalha como desenvolvedor Front End da TopTal. Há somente algumas pequenas mudanças que fiz (ex.: a inclusão de tags por post para que você possa filtrar por tags específicas) mas, de um modo geral, a estrutura e o layout são iguais ao dele.
 
 ## Até o próximo post!
 
