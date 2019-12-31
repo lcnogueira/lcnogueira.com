@@ -9,7 +9,7 @@ tags:
 
 ## Quem sou eu?
 
-Meu nome é Luiz Cláudio, mas prefiro que me chame de Luiz :) Trabalho há pouco mais de 7 anos como Desenvolvedor/Engenheiro de Software para uma universidade brasileira. Se quiser saber um pouco mais sobre mim, tem uma seção [Sobre](https://lcnogueira.com/about/) (está escrita em inglês e vou explicar o motivo mais a frente) que fala mais a respeito. Além disso, caso tenha qualquer dúvida, fique à vontade para em contato comigo através de uma das minhas redes sociais ou até mesmo por e-mail.
+Meu nome é Luiz Cláudio, mas prefiro que me chame de Luiz :) Trabalho há pouco mais de 7 anos como Desenvolvedor/Engenheiro de Software para uma universidade brasileira. Se quiser saber um pouco mais sobre mim, tem uma seção [Sobre](https://lcnogueira.com/about/) (está escrita em inglês e vou explicar o motivo mais a frente) que fala mais a respeito. Além disso, caso tenha qualquer dúvida, fique à vontade para entrar em contato comigo através de uma das minhas redes sociais ou até mesmo por e-mail.
 
 ## Saiu do forno!
 
@@ -36,7 +36,7 @@ Não. Além de conteúdo técnico, é importante também compartilhar conhecimen
 
 ## Layout/estrutura do site
 
-É importante dar os créditos ao criador do layout e da estrutura desse site. Sua estrutura foi baseada em um [curso do Willian Justen](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/), um brasileiro fora de série que trabalha como desenvolvedor Front End da TopTal. Há somente algumas pequenas mudanças que fiz (ex.: a inclusão de tags por post para que você possa filtrar por tags específicas) mas, de um modo geral, a estrutura e o layout são iguais ao dele.
+É importante dar os créditos ao criador do layout e da estrutura desse site. Sua estrutura foi baseada em um curso do Willian Justen, um brasileiro fora de série que trabalha como desenvolvedor Front End na TopTal. Há somente algumas pequenas mudanças que fiz (ex.: a inclusão de tags por post para que você possa filtrar por tags específicas) mas, de um modo geral, a estrutura e o layout são iguais ao dele.
 
 ## Até o próximo post!
 
