@@ -49,6 +49,7 @@ collections:
               'html',
               'js',
               'misc',
+              'my_year',
               'node',
               'react',
               'vscode',

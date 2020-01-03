@@ -30,6 +30,10 @@ const colors = {
     background: '#47650b',
     text: light,
   },
+  my_year: {
+    background: '#0d2c91',
+    text: light,
+  },
   node: {
     background: '#026e00',
     text: light,
