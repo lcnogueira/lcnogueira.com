@@ -5,6 +5,8 @@ description: 'Mudança de cidade, bootcamp, RSXP e blog no ar.'
 tags:
   - my_year
 ---
+
+
 Esse é o primeiro post de muitos que irei publicar (1 a cada final de ano) nessa [série](https://lcnogueira.com/tags/my_year). O objetivo é fazer com que eu mesmo possa fazer uma análise de como foi a minha evolução no último ano e, baseado nisso, estabelecer metas para o ano seguinte. Cada artigo de final de ano servirá de "insumo" para a análise do ano seguinte. Caso queira consultar todos os artigos, basta [filtrar pela tag da série](https://lcnogueira.com/tags/my_year).
 
 ## Meu ano de 2019
