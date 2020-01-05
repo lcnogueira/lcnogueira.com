@@ -31,7 +31,7 @@ Devido ao que vi no bootcamp da Rocket, decidi ir ao [Rocketseat Experience](htt
 
 Confesso que, apesar de ter gostado dos workshops, para mim, o que mais agregou foram as conversas com pessoas de diferentes empresas/locais e o hackaton em si. Há relatos (não oficiais xD) que o nosso time ficou no top 10 do hackaton (eram mais de 170 times). No entanto, o resultado foi o menos importante, mas sim a experiência de criar um produto em pouco tempo, com um time totalmente desconhecido e em um ambiente lotado. Abaixo uma foto da turma de parte da galera formada no evento,. Foi uma experiência única e **pretendo ir em todos os próximos eventos!**
 
-!\[Uma foto com 7 pessoas em pé com várias pessoas ao fundo no evento rsxp, da rocketseat](/assets/img/turma_rsxp.jpg)
+![Uma foto com 7 pessoas em pé com várias pessoas ao fundo no evento rsxp, da rocketseat](/assets/img/turma_rsxp.jpg)
 
 ### Diretoria da divisão de sistemas computacionais
 
@@ -59,9 +59,10 @@ Antes de iniciar a lista, gostaria de frisar que o principal objetivo para o ano
 5. 1 viagem internacional 
    1. Sempre viajei para prais devido a moramos no nordeste e adorarmos praias
    2. Aperfeiçoar a língua
-6. Largar serviço público/iniciar trabalho remoto
+6. "Produzir" mais e "consumir" menos
+7. Largar serviço público/iniciar trabalho remoto
    1. As primeiras 5 metas estão relacionadas a essa
-7. 1 livro de investimento por mês e investir melhor
+8. 1 livro de investimento por mês e investir melhor
    1. Vinha investindo boa parte em renda fixa. Esse ano comecei na renda variável e os resultados foram excelentes. Porém, foi um ano atípico (de bom) e, por isso, preciso estudar mais para ter mais controle do que venho fazendo/investindo.
 
 ## Conclusão
