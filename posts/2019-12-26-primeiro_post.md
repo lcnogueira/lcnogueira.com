@@ -9,7 +9,7 @@ tags:
 
 ## Quem sou eu?
 
-Meu nome é Luiz Cláudio, mas prefiro que me chame de Luiz :) Trabalho há pouco mais de 7 anos como Desenvolvedor/Engenheiro de Software para uma universidade brasileira. Se quiser saber um pouco mais sobre mim, tem uma seção [Sobre](https://lcnogueira.com/about/) (está escrita em inglês e vou explicar o motivo mais a frente) que fala mais a respeito. Além disso, caso tenha qualquer dúvida, fique à vontade para entrar em contato comigo através de uma das minhas redes sociais ou até mesmo por e-mail.
+Meu nome é Luiz Cláudio, mas prefiro que me chame de Luiz :) Trabalho há pouco mais de 7 anos como Desenvolvedor/Engenheiro de Software para uma universidade brasileira. Se quiser saber um pouco mais sobre mim, tem uma seção [Sobre](/about) (está escrita em inglês e vou explicar o motivo mais a frente) que fala mais a respeito. Além disso, caso tenha qualquer dúvida, fique à vontade para entrar em contato comigo através de uma das minhas redes sociais ou até mesmo por e-mail.
 
 ## Saiu do forno!
 
