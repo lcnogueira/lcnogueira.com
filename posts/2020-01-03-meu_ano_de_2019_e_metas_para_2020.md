@@ -109,7 +109,7 @@ Quem me conhece bem, sabe que eu não ando nada satisfeito com o serviço públi
 * Projetos que não agregam em conhecimento;
 * Dificuldade de implementação de mudanças que trazem impacto, mas que geram trabalho (não todos, mas a **maioria** quer "continuar na mesma");
 * Pouca possibilidade de crescimento (após diretor, só haveria a posição de Superintendente);
-* Tecnologias geralmente ultrapassadas.
+* Tecnologias ultrapassadas (via de regra).
 
 Esses, a meu ver, são os principais problemas inerentes ao serviço público. Isso não significa que não ofereça vantagens. Eu fiz muitos amigos (gente muito boa tecnicamente, por sinal), aprendi bastante com os desafios e pude dar um conforto bacana para a minha família com a grana que venho ganhando. Porém, **em meu caso**, os benefícios não compeçam os malefícios existentes. Por isso, comecei, há cerca de 2 anos, a me aperfeiçoar bastante para sair do serviço público com calma e planejamento. **Esse momento está muito próximo**, pois pretendo realizá-lo em 2020. 
 
