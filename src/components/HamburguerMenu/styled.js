@@ -50,10 +50,12 @@ export const Menu = styled.span`
     &:before {
       bottom: -7px;
     }
+  }
 
-    ${props =>
-      props.open &&
-      css`
+  ${props =>
+    props.open &&
+    css`
+      > span {
         height: 0;
         &:after,
         &:before {
@@ -67,8 +69,8 @@ export const Menu = styled.span`
         &:before {
           transform: rotate(-45deg);
         }
-      `}
-  }
+      }
+    `}
 `;
 
 export const Nav = styled.nav`
@@ -103,35 +105,17 @@ export const Nav = styled.nav`
   }
 
   li {
-    padding: 15px 0;
+    padding: 25px 0;
     transition: all 400ms 510ms;
     opacity: 0;
-
-    &:nth-child(odd) {
-      transform: translateX(30%);
-    }
-
-    &:nth-child(even) {
-      transform: translateX(-30%);
-    }
-
-    &:last-child {
-      transform: none;
-    }
-  }
-
-  a {
-    display: inline-block;
-    font-size: 1.5rem;
   }
 `;
 
 export const Link = styled(AniLink)`
   color: var(--texts);
   text-decoration: none;
-  transition: color 0.5s;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   &:hover {
     color: var(--highlight);
