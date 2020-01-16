@@ -71,10 +71,6 @@ export const Menu = styled.span`
   }
 `;
 
-// export const Lines = styled.span`
-
-// `;
-
 export const Nav = styled.nav`
   background-color: var(--mediumBackground);
   position: fixed;

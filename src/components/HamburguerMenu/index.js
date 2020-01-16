@@ -3,7 +3,6 @@ import links from '../MenuLinks/content';
 import getThemeColor from '../../utils/getThemeColor';
 
 import * as S from './styled';
-import SocialLinks from '../SocialLinks';
 
 function HamburguerMenu() {
   const [open, setOpen] = useState(false);
@@ -34,7 +33,6 @@ function HamburguerMenu() {
               </S.Link>
             </li>
           ))}
-          <SocialLinks />
         </ul>
       </S.Nav>
     </S.Container>
