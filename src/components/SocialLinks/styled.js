@@ -6,7 +6,7 @@ export const SocialLinksWrapper = styled.nav`
   width: 100%;
 
   ${media.lessThan('large')`
-    display: ${({ hideStyle }) => hideStyle && 'none'};
+    display: ${props => props.hideStyle && 'none'};
   `}
 `;
 
