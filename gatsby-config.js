@@ -48,6 +48,13 @@ const pluginsList = [
         },
         `gatsby-remark-lazy-load`,
         `gatsby-remark-external-links`,
+        {
+          resolve: `gatsby-remark-autolink-headers`,
+          options: {
+            icon: false,
+            removeAccents: true,
+          },
+        },
         `gatsby-remark-prismjs`,
       ],
     },
