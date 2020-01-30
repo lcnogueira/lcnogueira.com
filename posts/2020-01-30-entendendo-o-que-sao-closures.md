@@ -17,10 +17,8 @@ Um closure é a combinação de uma função agrupada (inclusa) com referência 
 
 ## Escopo Léxico
 
-
-
 ## Entendendo melhor o que é um Closure
 
-## 
-
 ## Blz, mas...para que preciso saber disso? Qual a importância?
+
+## Conclusão
