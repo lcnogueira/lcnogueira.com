@@ -1,9 +1,9 @@
 ---
 date: '2020-01-30 11:27:20'
-title: 'Entendendo o que são Closures '
+title: Closures
 description: >-
-  Entenda de uma vez por todas o que é uma closure, o que é o escopo léxico e
-  como tirar proveito disso.
+  Entenda o que são closures, o que é o escopo léxico e como tirar proveito
+  disso.
 tags:
   - js
 ---
@@ -54,10 +54,16 @@ let newFunc = showClosureBehaviour();newFunc(); // Imprime "Some test value"
 
 É possível perceber que a única diferença desse trecho de código para o anterior é que a função filha (`logValue`) é retornada a partir da função pai. Em alguns linguagens de programação não seria possível executar a função newFunc, visto que as variáveis locais dentro da função só existiram durante a execução da função `showClosureBehaviour`. Entretanto, isso não acontece em Javascript, visto que funções formam _closures_.
 
-**Uma _closure_ é a combinação de uma função e o escopo léxico dentro do qual a referida função foi declarada.** Esse escopo inclui quaisquer variáveis que estavam no escopo no momento em que a _closure_ foi criada. Ou seja, `newFunc` é uma referência para a instância da função `logValue` criada quando `showClosureBehaviour` é executada. A instância de `displayName` mantém a referência para o seu escopo léxico, dentro do qual a variável `localValue` ****existe. Logo, quando `newFunc` é invocada, a variável `localValue` permanece disponível para uso e "Some test value" é impresso no console.
+**Uma _closure_ é a combinação de uma função e o escopo léxico dentro do qual a referida função foi declarada.** Esse escopo inclui quaisquer variáveis que estavam no escopo no momento em que a _closure_ foi criada. Ou seja, `newFunc` é uma referência para a instância da função `logValue` criada quando `showClosureBehaviour` é executada. A instância de `displayName` mantém a referência para o seu escopo léxico, dentro do qual a variável `localValue` existe. Logo, quando `newFunc` é invocada, a variável `localValue` permanece disponível para uso e "Some test value" é impresso no console.
 
 ## Blz, mas...para que preciso saber disso? Qual a importância?
+
+Uma vez sabendo o que é uma _closure_ e o que é o _escopo léxico_, é possível, dentre outras utilidades, **emular métodos privados**. Diferentemente de uma linguagem como Java, JavaScript não provê uma forma nativa de declarar métodos privados. Tais métodos são úteis porque restringem o acesso ao seu código e provêem um modo de manter métodos não essenciais de bagunçar a interface pública do seu código. 
+
+Vejamos uma forma de usar _closures_ para definir funções públicas que podem acessar funções e variáveis privadas (conhecido como _Module Pattern_):
 
 
 
 ## Conclusão
+
+Se quiser saber mais a respeito, recomendo utilizar o [artigo da MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) que utilizei como base para construção desse artigo.
