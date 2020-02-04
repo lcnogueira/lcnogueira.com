@@ -9,7 +9,7 @@ tags:
 ---
 ## Introdução
 
-É comum utilizarmos frameworks ou mesmo o Vanilla Javascript sem entendermos alguns conceitos que podem nos ajudar bastante durante o nosso dia-a-dia. Hoje vamos ver o conceito de _closures,_ como podem compartilhar o mesmo _escopo léxico_ e o que isso pode trazer de vantagem durante o desenvolvimento. Para isso, utilizarei como referência principal o [artigo da MDN sobre _closures_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)_._ Sem mais delongas, vamos lá!
+É comum utilizarmos frameworks ou mesmo o Vanilla Javascript sem entendermos alguns conceitos que podem nos ajudar bastante durante o nosso dia-a-dia. Hoje vamos ver o conceito de _closures,_ como podem compartilhar o mesmo _escopo léxico_ e o que isso pode trazer de vantagem durante o desenvolvimento. Para isso, utilizarei como referências principais, o [artigo da MDN sobre _closures_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)_._ Sem mais delongas, vamos lá!
 
 ## Em resumo, o que é uma _Closure?_
 
@@ -65,9 +65,8 @@ Vejamos uma forma de usar _closures_ para definir funções públicas que podem 
 ```js
 const makeCounter = function() {
   //Semelhante à criação de uma classe em POO
-  var privateCounter = 0; //Faz parte do escopo léxico compartilhado entre as funções "increment", "decrement" e "value"
-
-  function changeBy(val) { //Faz parte do escopo léxico compartilhado entre as funções "increment", "decrement" e "value"
+  var privateCounter = 0; //Faz parte do escopo léxico compartilhado 
+  function changeBy(val) { //Faz parte do escopo léxico compartilhado
     privateCounter += val;
   }
 
