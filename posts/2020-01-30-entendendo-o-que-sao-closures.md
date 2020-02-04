@@ -1,5 +1,5 @@
 ---
-date: '2020-01-30 11:27:20'
+date: '2020-02-04 11:27:20'
 title: Closures
 description: >-
   Entenda o que são closures, o que é o escopo léxico e como tirar proveito
@@ -9,7 +9,7 @@ tags:
 ---
 ## Introdução
 
-\* Material utilizado principalmente do mdn (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) e https://github.com/ryanmcdermott/clean-code-javascript#objects-and-data-structures
+É comum utilizarmos frameworks ou mesmo o Vanilla Javascript sem entendermos alguns conceitos que podem nos ajudar bastante durante o nosso dia-a-dia. Hoje vamos ver o conceito de _closures,_ como podem compartilhar o mesmo _escopo léxico_ e o que isso pode trazer de vantagem durante o desenvolvimento. Para isso, utilizarei como referência principal o [artigo da MDN sobre _closures_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)_._ Sem mais delongas, vamos lá!
 
 ## Em resumo, o que é uma _Closure?_
 
@@ -62,8 +62,50 @@ Uma vez sabendo o que é uma _closure_ e o que é o _escopo léxico_, é possív
 
 Vejamos uma forma de usar _closures_ para definir funções públicas que podem acessar funções e variáveis privadas (conhecido como _Module Pattern_):
 
+```js
+const makeCounter = function() {
+  //Semelhante à criação de uma classe em POO
+  var privateCounter = 0; //Faz parte do escopo léxico compartilhado entre as funções "increment", "decrement" e "value"
 
+  function changeBy(val) { //Faz parte do escopo léxico compartilhado entre as funções "increment", "decrement" e "value"
+    privateCounter += val;
+  }
+
+  return {
+    increment: function() {
+      changeBy(1);
+    },
+    decrement: function() {
+      changeBy(-1);
+    },
+    value: function() {
+      return privateCounter;
+    }
+  };
+};
+
+let counter1 = makeCounter(); //Semelhante à criação de uma instância de um objeto em POO
+let counter2 = makeCounter(); //Semelhante à criação de uma instância de um objeto em POO
+
+console.log(counter1.privateCounter); //undefined
+console.log(counter1.changeBy);       //undefined
+
+console.log(counter1.value()); /* Imprime 0 */
+counter1.increment();
+counter1.increment();
+console.log(counter1.value()); /* Imprime 2 */
+
+console.log(counter2.value()); /* Imprime 0 */
+```
+
+Nesse exemplo, um único _escopo léxico_ é criado e compartilhado por 3 funções: `increment`, `decrement` e `value`. Esse escopo, por sua vez, contém 2 itens privados: uma variável chamada `privateCounter` e uma função chamada `changeBy.` Nesse caso, nenhum dos 2 itens podem ser acessados diretamente, mas somente através das 3 funções públicas que são retornadas. Ou seja, **essas 3 funções são _closures_ que compartilham o mesmo escopo, tendo acesso à variável _privateCounter_** **e à função _changeBy_.**
+
+Outra coisa interessante a se perceber é que `counter1` e `counter2` são independentes entre si e cada uma mantém uma versão diferente da variável `privateCounter` através da sua própria _closure_. Cada vez que um desses contadores é chamado, seu _escopo léxico_ muda, mudando assim o valor da variável `privateCounter`. No entanto, mudanças do valor da variável em uma _closure_ não afetam o valor em outra _closure_. Ou seja, esse comportamento é exatamente o que temos quando criamos instâncias de classes em POO (programação Orientada a Objetos).
 
 ## Conclusão
 
-Se quiser saber mais a respeito, recomendo utilizar o [artigo da MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) que utilizei como base para construção desse artigo.
+Como foi possível perceber durante esse artigo, através do conhecimento do que é uma _closure_ e do que é o _escopo léxico_, podemos ter acesso a uma série de benefícios que, normalmente, são associados com a POO, principalmente o encapsulamento.
+
+Espero que o conhecimento adquirido durante esse artigo possa ser útil no seu dia-a-dia com Javascript xD. Se quiser saber mais a respeito, você pode consultar o [artigo da MDN que trata de _closures_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) que utilizei como base. Se ficar com alguma dúvida, quiser discutir algo ou mesmo corrigir algum detalhe, fique à vontade para deixar seu comentário logo abaixo.
+
+Até a próxima!
