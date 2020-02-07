@@ -1,6 +1,6 @@
 ---
 date: '2020-02-04 11:27:20'
-image: /assets/img/js-closure
+image: /assets/img/js-closure.jpg
 title: O que são Closures?
 description: >-
   Entenda o que são closures, o que é o escopo léxico e como tirar proveito
