@@ -62,17 +62,6 @@ const pluginsList = [
   `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
   {
-    resolve: `gatsby-plugin-algolia-search`,
-    options: {
-      appId: process.env.GATSBY_ALGOLIA_APP_ID,
-      apiKey: process.env.ALGOLIA_ADMIN_KEY,
-      indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, // for all queries
-      queries,
-      chunkSize: 10000,
-      enablePartialUpdates: true, // default: false
-    },
-  },
-  {
     resolve: `gatsby-plugin-manifest`,
     options: {
       name: `Luiz Cláudio`,
@@ -91,13 +80,29 @@ const pluginsList = [
   `gatsby-plugin-netlify-cms`,
 ];
 
+if(process.env.CONTEXT === 'production'){
+  const algolia = {
+    resolve: `gatsby-plugin-algolia-search`,
+    options: {
+      appId: process.env.GATSBY_ALGOLIA_APP_ID,
+      apiKey: process.env.ALGOLIA_ADMIN_KEY,
+      indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, // for all queries
+      queries,
+      chunkSize: 10000,
+      enablePartialUpdates: true, // default: false
+    },
+  }
+
+  pluginsList.push(algolia);
+}
+
 module.exports = {
   siteMetadata: {
     title: `Luiz Cláudio`,
     author: `@luizcns`,
     position: `Javascript Software Engineer`,
-    description: `A blog about Javascript, React, Gatsby, frontend development and other stuff.`,
-    authorDescription: `I work at UFERSA and for Udacity at the moment and write about Javascript, React, Gatsby, frontend development and other stuff.`,
+    description: `A blog about Javascript, React, Gatsby, Next.js, frontend development and other stuff.`,
+    authorDescription: `I work at UFERSA and for Udacity at the moment and write about Javascript, React, Gatsby, Next.js, frontend development and other stuff.`,
     siteUrl: 'https://lcnogueira.com',
   },
   plugins: pluginsList,
