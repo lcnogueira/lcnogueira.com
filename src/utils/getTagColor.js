@@ -8,7 +8,7 @@ const colors = {
   },
   react: {
     background: '#61DAFB',
-    text: dark,
+    text: light,
   },
   nextjs: {
     background: dark,
@@ -18,7 +18,7 @@ const colors = {
     background: '#10910e',
     text: light,
   },
-  'react-testing-library': {
+  'RTL': {
     background: '#FF0000',
     text: light
   },

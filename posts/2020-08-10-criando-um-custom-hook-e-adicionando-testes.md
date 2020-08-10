@@ -8,6 +8,6 @@ tags:
   - react
   - js
   - jest
-  - react-testing-library
+  - RTL
 ---
 
