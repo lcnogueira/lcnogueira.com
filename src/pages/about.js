@@ -64,7 +64,7 @@ const AboutPage = () => (
         <li>Tests (Jest / React Testing Library)</li>
         <li>ReactJS / Redux</li>
         <li>TypeScript</li>
-        <li>Next.js / Gatsby.js</li>
+        <li>Next.js</li>
         <li>GatsbyJS</li>
         <li>Strapi</li>
         <li>NodeJS</li>
