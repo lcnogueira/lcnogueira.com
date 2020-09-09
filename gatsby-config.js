@@ -102,7 +102,7 @@ module.exports = {
     author: `@luizcns`,
     position: `Javascript Software Engineer`,
     description: `A blog about Javascript, React, Next.js, Strapi, frontend development and other stuff.`,
-    authorDescription: `I work at UFERSA and for Udacity at the moment and write about Javascript, React, Gatsby, Next.js, frontend development and other stuff.`,
+    authorDescription: `I work at UFERSA at the moment and write about Javascript, React, Next.js, frontend development and other stuff.`,
     siteUrl: 'https://lcnogueira.com',
   },
   plugins: pluginsList,
