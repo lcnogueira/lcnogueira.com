@@ -58,15 +58,18 @@ const AboutPage = () => (
       <h2>Skills</h2>
       <ul>
         <li>HTML 5</li>
-        <li>CSS 3 (Sass)</li>
+        <li>CSS 3 / Styled Components</li>
         <li>Responsive Design</li>
-        <li>Javascript (Design Patterns, Tests and ES6/7).</li>
-        <li>ReactJS / Redux / Flux.</li>
+        <li>Javascript (ES6/7 / Design Patterns)</li>
+        <li>Tests (Jest / React Testing Library)</li>
+        <li>ReactJS / Redux</li>
+        <li>TypeScript</li>
+        <li>Next.js</li>
         <li>GatsbyJS</li>
+        <li>Strapi</li>
         <li>NodeJS</li>
-        <li>Styled Components</li>
-        <li>Java</li>
         <li>PostgreSQL.</li>
+        <li>Java</li>
         <li>Scrum and Kanban.</li>
         <li>I'm a fast learner as well :)</li>
       </ul>

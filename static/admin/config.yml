@@ -43,15 +43,19 @@ collections:
           options:
             [
               'css',
+              'react',
+              'nextjs',
+              'jest',
+              'react-testing-library',
+              'typescript',
+              'js',
               'docker',
               'gatsby',
               'git',
               'html',
-              'js',
               'misc',
               'my_year',
               'node',
-              'react',
               'vscode',
             ],
         }

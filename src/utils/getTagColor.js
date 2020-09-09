@@ -6,6 +6,30 @@ const colors = {
     background: '#2DA0C3',
     text: dark,
   },
+  react: {
+    background: '#61DAFB',
+    text: dark,
+  },
+  nextjs: {
+    background: dark,
+    text: light,
+  },
+  jest: {
+    background: '#10910e',
+    text: light,
+  },
+  'react-testing-library': {
+    background: '#FF0000',
+    text: light
+  },
+  'typescript': {
+    background: '#3178c6',
+    text: light
+  },
+  js: {
+    background: '#F0DB4E',
+    text: dark,
+  },
   docker: {
     background: '#03423f',
     text: light,
@@ -22,10 +46,6 @@ const colors = {
     background: '#b03a19',
     text: light,
   },
-  js: {
-    background: '#F0DB4E',
-    text: dark,
-  },
   misc: {
     background: '#47650b',
     text: light,
@@ -37,10 +57,6 @@ const colors = {
   node: {
     background: '#026e00',
     text: light,
-  },
-  react: {
-    background: '#61DAFB',
-    text: dark,
   },
   vscode: {
     background: '#2c2c32',
