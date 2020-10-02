@@ -19,19 +19,11 @@ const AboutPage = () => (
         </span>
       </h1>
       <p>
-        I'm a software engineer based in Brazil and I've been working for{' '}
-        <a
-          href="https://ufersa.edu.br"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          UFERSA
+        I'm a full stack engineer based in Brazil and I've been working for{' '}
+        <a href="https://ae.studio" target="_blank" rel="noopener noreferrer">
+          AE Studio
         </a>{' '}
-        (a Brazilian University) since August 2012 (you can do the math) and for{' '}
-        <a href="https://www.udacity.com/course/react-nanodegree--nd019">
-          Udacity
-        </a>{' '}
-        (as a React/Javascript project reviewer) since April 2018.
+        (an american startup) since October 2012 (you can do the math).
       </p>
       <p>
         I went to{' '}

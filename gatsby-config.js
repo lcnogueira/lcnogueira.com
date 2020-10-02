@@ -80,7 +80,7 @@ const pluginsList = [
   `gatsby-plugin-netlify-cms`,
 ];
 
-if(process.env.CONTEXT === 'production'){
+if (process.env.CONTEXT === 'production') {
   const algolia = {
     resolve: `gatsby-plugin-algolia-search`,
     options: {
@@ -91,7 +91,7 @@ if(process.env.CONTEXT === 'production'){
       chunkSize: 10000,
       enablePartialUpdates: true, // default: false
     },
-  }
+  };
 
   pluginsList.push(algolia);
 }
@@ -100,9 +100,9 @@ module.exports = {
   siteMetadata: {
     title: `Luiz Cláudio`,
     author: `@luizcns`,
-    position: `Javascript Software Engineer`,
+    position: `Full Stack Engineer`,
     description: `A blog about Javascript, React, Next.js, Strapi, frontend development and other stuff.`,
-    authorDescription: `I work at UFERSA at the moment and write about Javascript, React, Next.js, frontend development and other stuff.`,
+    authorDescription: `I work at at AE Studio at the moment and write about Javascript, React, Next.js, frontend development and other stuff.`,
     siteUrl: 'https://lcnogueira.com',
   },
   plugins: pluginsList,
