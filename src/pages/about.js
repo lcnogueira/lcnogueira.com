@@ -23,7 +23,10 @@ const AboutPage = () => (
         <a href="https://ae.studio" target="_blank" rel="noopener noreferrer">
           AE Studio
         </a>{' '}
-        (an american startup) since October 2012 (you can do the math).
+        (an american startup) since October 2020 (you can do the math). I have
+        also been working at [Sabiá
+        Platform](https://github.com/ufersa/plataforma-sabia) since February
+        2020.
       </p>
       <p>
         I went to{' '}
@@ -57,7 +60,6 @@ const AboutPage = () => (
         <li>ReactJS / Redux</li>
         <li>TypeScript</li>
         <li>Next.js</li>
-        <li>GatsbyJS</li>
         <li>Strapi</li>
         <li>NodeJS</li>
         <li>PostgreSQL.</li>
