@@ -24,9 +24,15 @@ const AboutPage = () => (
           AE Studio
         </a>{' '}
         (an american startup) since October 2020 (you can do the math). I have
-        also been working at [Sabiá
-        Platform](https://github.com/ufersa/plataforma-sabia) since February
-        2020.
+        also been working at{' '}
+        <a
+          href="https://github.com/ufersa/plataforma-sabia"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sabiá Platform
+        </a>{' '}
+        since February 2020.
       </p>
       <p>
         I went to{' '}
