@@ -19,19 +19,20 @@ const AboutPage = () => (
         </span>
       </h1>
       <p>
-        I'm a software engineer based in Brazil and I've been working for{' '}
+        I'm a full stack engineer based in Brazil and I've been working for{' '}
+        <a href="https://ae.studio" target="_blank" rel="noopener noreferrer">
+          AE Studio
+        </a>{' '}
+        (an american startup) since October 2020 (you can do the math). I have
+        also been working at{' '}
         <a
-          href="https://ufersa.edu.br"
+          href="https://github.com/ufersa/plataforma-sabia"
           target="_blank"
           rel="noopener noreferrer"
         >
-          UFERSA
+          Sabiá Platform
         </a>{' '}
-        (a Brazilian University) since August 2012 (you can do the math) and for{' '}
-        <a href="https://www.udacity.com/course/react-nanodegree--nd019">
-          Udacity
-        </a>{' '}
-        (as a React/Javascript project reviewer) since April 2018.
+        since February 2020.
       </p>
       <p>
         I went to{' '}
@@ -65,7 +66,6 @@ const AboutPage = () => (
         <li>ReactJS / Redux</li>
         <li>TypeScript</li>
         <li>Next.js</li>
-        <li>GatsbyJS</li>
         <li>Strapi</li>
         <li>NodeJS</li>
         <li>PostgreSQL.</li>
