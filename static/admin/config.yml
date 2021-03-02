@@ -46,7 +46,7 @@ collections:
               'react',
               'nextjs',
               'jest',
-              'react-testing-library',
+              'RTL',
               'typescript',
               'js',
               'docker',
