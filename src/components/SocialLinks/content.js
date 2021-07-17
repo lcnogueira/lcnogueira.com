@@ -8,10 +8,6 @@ const links = [
     url: 'https://www.linkedin.com/in/lcnogueira/',
   },
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/luizcns',
-  },
-  {
     label: 'Instagram',
     url: 'https://www.instagram.com/lcnogueirads',
   },
