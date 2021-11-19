@@ -100,9 +100,9 @@ module.exports = {
   siteMetadata: {
     title: `Luiz Cláudio`,
     author: `@luizcns`,
-    position: `Full Stack Engineer`,
+    position: `Senior Javascript Engineer`,
     description: `A blog about Javascript, React, Next.js, Strapi, frontend development and other stuff.`,
-    authorDescription: `I work at AE Studio as a full stack engineer at the moment and write about Javascript, React, Next.js, frontend development and other stuff.`,
+    authorDescription: `I work at 10up as senior javascript engineer at the moment and write about Javascript, React, Next.js, frontend development and other stuff.`,
     siteUrl: 'https://lcnogueira.com',
   },
   plugins: pluginsList,

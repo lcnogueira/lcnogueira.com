@@ -19,12 +19,12 @@ const AboutPage = () => (
         </span>
       </h1>
       <p>
-        I'm a full stack engineer based in Brazil and I've been working for{' '}
-        <a href="https://ae.studio" target="_blank" rel="noopener noreferrer">
-          AE Studio
+        I'm a senior javascript engineer based in Brazil and I've been working for{' '}
+        <a href="https://10up.com" target="_blank" rel="noopener noreferrer">
+          10up
         </a>{' '}
-        (an american startup) since October 2020 (you can do the math). I have
-        also been working at{' '}
+        (an american agency) since November 2021 (you can do the math). I have
+        also worked at{' '}
         <a
           href="https://github.com/ufersa/plataforma-sabia"
           target="_blank"
@@ -32,7 +32,7 @@ const AboutPage = () => (
         >
           Sabiá Platform
         </a>{' '}
-        since February 2020.
+        from January 2020 to February 2021.
       </p>
       <p>
         I went to{' '}
