@@ -54,7 +54,7 @@ const AboutPage = () => (
       <p>
         I spend my free time watching movies with my wife, Jamila, doing some
         exercise or reading a book (usually an investing book). At the moment,
-        my wife and I live in Brasilia, Brazil, and have no kids (yet).
+        my wife, our kid ("Dudu") and I live in Brasilia, Brazil.
       </p>
       <h2>Skills</h2>
       <ul>
